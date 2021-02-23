@@ -15,3 +15,10 @@ window.addEventListener("keypress", function(e){
     guessEl.textContent = game1.statusMessage;
     console.log(game1.status)
 });
+
+
+getPuzzle().then((data) => {
+  console.log(data);
+}).catch((err) => {
+  console.log(`Error: ${err}`);
+});
